@@ -21,6 +21,7 @@
             </div>
             <div class="nav-links">
                 <a href="#use-cases">Use Cases</a>
+                <a href="#screenshots">Screenshots</a>
                 <a href="#features">Features</a>
                 <a href="#how-it-works">How It Works</a>
                 <a href="#pricing">Pricing</a>
@@ -54,6 +55,13 @@
                 <span>🚫 No Credit Card Required</span> • 
                 <span>🔒 100% Local & Private</span> • 
                 <span>🍏 macOS Sonoma, Sequoia & Ventura Ready</span>
+            </div>
+            <div class="hero-preview">
+                <div class="mac-window">
+                    <div class="mac-window-body">
+                        <img src="images/app_schedule_standup.png" alt="Scheduler for WhatsApp Desktop App Interface" class="window-screenshot" id="heroScreenshot">
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -97,6 +105,107 @@
                     <div class="card-icon">📢</div>
                     <h3>Daily Menus & Property Notices</h3>
                     <p>Broadcast daily lunch specials to corporate customer groups at 11:30 AM, dispatch daily wholesale inventory drops, or automate recurring HOA maintenance fee reminders on the 1st of every month.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Screenshots & Interface Showcase Section -->
+    <section id="screenshots" class="screenshots-section">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="badge">📸 Inside The App</div>
+                <h2>Intuitive Controls. Uncompromising Power.</h2>
+                <p>Crafted exclusively for macOS with an authentic WhatsApp dark aesthetic, clear step-by-step guidance, and millisecond-precision controls.</p>
+            </div>
+
+            <!-- Screenshot Tabs Navigation -->
+            <div class="screen-tabs">
+                <button class="screen-tab-btn active" onclick="switchScreenshot('schedule', this)">
+                    <span class="tab-icon">💬</span>
+                    <span class="tab-label">
+                        <strong>Schedule & Recurrence</strong>
+                        <small>3-Step Setup & Precision Timing</small>
+                    </span>
+                </button>
+                <button class="screen-tab-btn" onclick="switchScreenshot('court', this)">
+                    <span class="tab-icon">🎾</span>
+                    <span class="tab-label">
+                        <strong>Slot & Court Sniping</strong>
+                        <small>Instant Sub-50ms Unlock Dispatch</small>
+                    </span>
+                </button>
+                <button class="screen-tab-btn" onclick="switchScreenshot('protection', this)">
+                    <span class="tab-icon">🔒</span>
+                    <span class="tab-label">
+                        <strong>Protection & Auto-Wake</strong>
+                        <small>Time Windows & Sleep Safeguards</small>
+                    </span>
+                </button>
+                <button class="screen-tab-btn" onclick="switchScreenshot('activity', this)">
+                    <span class="tab-icon">📋</span>
+                    <span class="tab-label">
+                        <strong>Live Activity Console</strong>
+                        <small>Sub-50ms Audit & Realtime Logs</small>
+                    </span>
+                </button>
+            </div>
+
+            <!-- Screenshot Viewport Display -->
+            <div class="screen-display-card">
+                <div class="screen-image-wrapper">
+                    <img id="activeScreenshot" src="images/app_schedule_standup.png" alt="Scheduler for WhatsApp App Interface" class="gallery-image">
+                </div>
+                
+                <div class="screen-caption-box">
+                    <div id="screenInfoSchedule" class="screen-info active">
+                        <div class="screen-info-badge">Step-by-Step Guided Setup</div>
+                        <h3>Streamlined 3-Step Scheduling</h3>
+                        <p>Never wonder what to configure next. The interface guides you clearly from connecting your local WhatsApp session, to setting target recipients and messages, to locking in your recurrence pattern and exact dispatch time.</p>
+                        <div class="screen-feature-chips">
+                            <span class="chip">💾 Save Schedule Persistence</span>
+                            <span class="chip amber">▶ Test Send Verification</span>
+                            <span class="chip green">⚡ One-Click Activate Schedule</span>
+                            <span class="chip">⏳ Live Spin-Wait Timer</span>
+                            <span class="chip">🔁 Weekdays / Daily / Custom Recurrence</span>
+                        </div>
+                    </div>
+
+                    <div id="screenInfoCourt" class="screen-info">
+                        <div class="screen-info-badge">First-Come Booking Sniping</div>
+                        <h3>Sub-50ms Lockout Bypassing</h3>
+                        <p>Pre-arm court reservations and studio bookings hours in advance. When the admin unlocks the group at the exact split-second, Scheduler for WhatsApp detects the enabled input and injects your booking payload in under 38 milliseconds via native OS clipboard.</p>
+                        <div class="screen-feature-chips">
+                            <span class="chip green">⚡ Instant DOM Unlock Detection</span>
+                            <span class="chip">🎾 Padel, Tennis, Golf & Gym Slots</span>
+                            <span class="chip">⏱️ Precision Millisecond Dispatches</span>
+                            <span class="chip">🍎 Apple Silicon & Intel Native</span>
+                        </div>
+                    </div>
+
+                    <div id="screenInfoProtection" class="screen-info">
+                        <div class="screen-info-badge">Safeguards & Power Management</div>
+                        <h3>Hardware Auto-Wake & Sleep Protection</h3>
+                        <p>Worry-free automation even when away from your desk. Built-in time window guardrails and automatic missed-schedule aborts ensure no stale messages fire on wake, while hardware RTC auto-wake safely wakes your Mac 2 minutes ahead of time.</p>
+                        <div class="screen-feature-chips">
+                            <span class="chip green">⚡ macOS pmset RTC Auto-Wake</span>
+                            <span class="chip">🛡️ Missed-Schedule Auto-Abort</span>
+                            <span class="chip">⏰ Target Time-Window Restrictions</span>
+                            <span class="chip">🔒 100% Local POSIX 0700 Storage</span>
+                        </div>
+                    </div>
+
+                    <div id="screenInfoActivity" class="screen-info">
+                        <div class="screen-info-badge">Real-Time Execution Logs</div>
+                        <h3>Sub-Millisecond Audit Trail</h3>
+                        <p>Watch execution in real-time or review past dispatches. The Activity Console logs every stage of dispatch with microsecond timestamps: Chrome connection, DOM search, clipboard injection, and server receipt acknowledgment.</p>
+                        <div class="screen-feature-chips">
+                            <span class="chip">🕒 Microsecond Audit Timestamps</span>
+                            <span class="chip green">⚡ 37.8ms Measured End-to-End Latency</span>
+                            <span class="chip">📁 Instant Log Folder Access</span>
+                            <span class="chip">🛡️ Headless Execution Support</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -277,6 +386,7 @@
                     <p>High-precision automated messaging for macOS.</p>
                 </div>
                 <div class="footer-links">
+                    <a href="#screenshots">Screenshots</a>
                     <a href="#features">Features</a>
                     <a href="#pricing">Pricing</a>
                     <a href="privacy.html">Privacy Policy</a>

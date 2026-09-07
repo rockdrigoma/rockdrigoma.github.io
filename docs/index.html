@@ -141,6 +141,12 @@
                 </div>
 
                 <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Hardware Auto-Wake</h3>
+                    <p>Configures macOS hardware RTC timers (<code>pmset</code>) to wake your sleeping Mac 2 minutes prior to dispatch automatically.</p>
+                </div>
+
+                <div class="card">
                     <div class="card-icon">🎨</div>
                     <h3>Authentic Dark Mode UI</h3>
                     <p>A sleek, native desktop interface crafted with WhatsApp's exact dark aesthetic for seamless, distraction-free configuration.</p>
@@ -228,8 +234,8 @@
                     <p>Yes, absolutely. Scheduler for WhatsApp works with any individual contact, community channel, or group chat. Whether you are automating morning team standups, sending client session reminders, scheduling midnight birthday wishes, or securing competitive sports courts, the scheduler executes with exact timing.</p>
                 </div>
                 <div class="faq-item">
-                    <h4>Do I need to leave my Mac awake for the schedule to trigger?</h4>
-                    <p>Yes. macOS cannot run tasks while asleep. We recommend scheduling during active hours or setting your Mac not to sleep prior to the scheduled send time.</p>
+                    <h4>What happens if my Mac is asleep? Does it support Auto-Wake?</h4>
+                    <p>Yes! The app features built-in macOS Hardware Auto-Wake powered by <code>pmset</code>. It programs your Mac's internal RTC hardware clock to automatically power on and wake your machine 2 minutes before your scheduled send time (requires keeping your Mac connected to its power adapter). You can also safely close the app window and let Apple's native <code>launchd</code> daemon handle execution in the background.</p>
                 </div>
                 <div class="faq-item">
                     <h4>Is my WhatsApp data safe?</h4>

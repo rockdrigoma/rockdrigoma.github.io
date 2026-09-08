@@ -2,33 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy – Scheduler for WhatsApp</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body style="padding: 40px 20px;">
-    <div style="max-width: 800px; margin: 0 auto; background: var(--bg-surface); padding: 40px; border-radius: var(--radius); border: 1px solid var(--border);">
-        <a href="index.html" style="color: var(--primary); font-weight: 600;">← Back to Home</a>
-        <h1 style="margin: 20px 0 10px;">Privacy Policy</h1>
-        <p style="color: var(--text-secondary); margin-bottom: 30px;">Last updated: September 2026</p>
+<body style="padding: 40px 20px; background: var(--bg-main, #0b1317); color: var(--text-primary, #e9edef); font-family: 'Inter', -apple-system, sans-serif;">
+    <div style="max-width: 800px; margin: 0 auto; background: var(--bg-surface, #111b21); padding: 40px; border-radius: 12px; border: 1px solid var(--border, rgba(255, 255, 255, 0.1)); line-height: 1.6;">
+        <a href="index.html" style="color: #25d366; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">← Back to Home</a>
+        <h1 style="margin: 20px 0 10px; font-size: 2rem; color: #fff;">Privacy Policy</h1>
+        <p style="color: #8696a0; margin-bottom: 30px; font-size: 0.95rem;">Last updated: September 2026</p>
 
-        <h3>1. Zero Data Collection Architecture</h3>
-        <p style="color: var(--text-secondary); margin-bottom: 20px;">
-            Scheduler for WhatsApp is a desktop client software that operates entirely locally on your macOS device. We do not operate external backend servers to collect, store, or process your WhatsApp messages, chat lists, contacts, or phone numbers.
+        <h3 style="color: #fff; margin-top: 24px; font-size: 1.2rem;">1. Zero-Data-Collection Principle</h3>
+        <p style="color: #aebac1; margin-bottom: 16px;">
+            MantisCorp builds software centered around user sovereignty and local execution. <strong>Scheduler for WhatsApp</strong> is a native macOS application that operates 100% on your local machine. We do not maintain any cloud databases, external analytics trackers, or remote servers that collect, store, inspect, or intercept your personal messages, contact lists, conversation histories, or phone numbers.
         </p>
 
-        <h3>2. Local Session Storage</h3>
-        <p style="color: var(--text-secondary); margin-bottom: 20px;">
-            Your WhatsApp authentication session is stored solely within your local macOS user profile directory with restricted POSIX 0700 file permissions.
+        <h3 style="color: #fff; margin-top: 24px; font-size: 1.2rem;">2. Local Session Storage & Security</h3>
+        <p style="color: #aebac1; margin-bottom: 16px;">
+            All automation data, schedules, and WhatsApp Web browser profiles are stored exclusively within your local macOS user directory (<code>~/.whatsapp_scheduler/</code>). These files are protected using restricted POSIX <code>0700</code> / <code>0600</code> file system permissions, accessible only by your local macOS account.
         </p>
 
-        <h3>3. Payment & Licensing Processing</h3>
-        <p style="color: var(--text-secondary); margin-bottom: 20px;">
-            Payment processing for Pro licenses is handled securely by Lemon Squeezy. We do not store or process your credit card or financial billing information.
+        <h3 style="color: #fff; margin-top: 24px; font-size: 1.2rem;">3. Payments & Billing Security</h3>
+        <p style="color: #aebac1; margin-bottom: 16px;">
+            Purchases and license key issuance are processed through certified, PCI-DSS Level 1 compliant merchant partners (such as Gumroad, Stripe, or Lemon Squeezy). When purchasing a license:
+        </p>
+        <ul style="color: #aebac1; margin-left: 20px; margin-bottom: 16px;">
+            <li>Your credit card numbers, billing addresses, and payment credentials are encrypted and processed directly by the payment processor. MantisCorp never has access to or stores your payment details.</li>
+            <li>We only receive basic order metadata (email address, license key, and order ID) for the sole purpose of customer support and license activation verification.</li>
+        </ul>
+
+        <h3 style="color: #fff; margin-top: 24px; font-size: 1.2rem;">4. Telemetry & Analytics</h3>
+        <p style="color: #aebac1; margin-bottom: 16px;">
+            Scheduler for WhatsApp does not contain background tracking SDKs, advertising IDs, or behavioral analytics beacons. The software communicates over the internet exclusively when you perform a manual action to activate or verify your software license key.
         </p>
 
-        <h3>4. Contact</h3>
-        <p style="color: var(--text-secondary);">
-            For privacy inquiries, contact support@mantiscorp.io.
+        <h3 style="color: #fff; margin-top: 24px; font-size: 1.2rem;">5. Third-Party Trademarks & Independence</h3>
+        <p style="color: #aebac1; margin-bottom: 16px;">
+            WhatsApp is a registered trademark of Meta Platforms, Inc. Scheduler for WhatsApp is an independent software tool and is not affiliated with, authorized, maintained, or endorsed by WhatsApp LLC or Meta Platforms, Inc.
+        </p>
+
+        <h3 style="color: #fff; margin-top: 24px; font-size: 1.2rem;">6. Contacting Us</h3>
+        <p style="color: #aebac1;">
+            If you have questions regarding our privacy practices or data handling, please contact us at <a href="mailto:privacy@mantiscorp.io" style="color: #25d366; text-decoration: none;">privacy@mantiscorp.io</a>.
         </p>
     </div>
 </body>
